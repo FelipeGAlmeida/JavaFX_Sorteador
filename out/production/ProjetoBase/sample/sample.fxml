@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label id="sort_txt" fx:id="sort_txt" alignment="CENTER" layoutX="74.0" layoutY="69.0" text="--" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="199.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="30.0" text="Selecione o intervalo de valores para sorteio:" />
+      <Spinner id="from_spn" fx:id="from_spn" editable="true" layoutX="278.0" layoutY="26.0" prefHeight="25.0" prefWidth="65.0" />
+      <Spinner id="to_spn" fx:id="to_spn" editable="true" layoutX="380.0" layoutY="26.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="356.0" layoutY="30.0" text="~" />
+      <Label id="err_txt" fx:id="err_txt" layoutX="59.0" layoutY="369.0" text="Algo parece estar errado. Verifique os valores e tente novamente." textFill="RED" visible="false" />
+      <Button id="sort_btn" fx:id="sort_btn" layoutX="128.0" layoutY="337.0" mnemonicParsing="false" onAction="#sortInRange" prefHeight="25.0" prefWidth="208.0" text="Sortear" />
+   </children>
+</AnchorPane>
